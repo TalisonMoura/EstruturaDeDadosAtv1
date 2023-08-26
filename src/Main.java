@@ -11,7 +11,7 @@ public class Main {
         Scanner ler = new Scanner(System.in);
 
         int max30 = 0, soma30 = 0, somatotal = 0;
-        int[] vet = new int[3];
+        int[] vet = new int[8];
 
         System.out.println("Entre com os números: ");
         for (int i = 0; i < vet.length; i++) {
@@ -35,9 +35,9 @@ public class Main {
     static void Questao2() {
         Scanner ler = new Scanner(System.in);
         int[][] estoque = new int[4][5];
-        boolean stop = false;
+        boolean parar = false;
 
-        while (!stop) {
+        while (!parar) {
             System.out.print("Entre com o número do armario: ");
             int armario = ler.nextInt();
 
@@ -60,9 +60,9 @@ public class Main {
             int keep = ler.nextInt();
 
             if (keep == 2) {
-                stop = true;
+                parar = true;
             } else if (keep == 1) {
-                stop = false;
+                parar = false;
             }
         }
         System.out.println("Quantidade de caixas em cada prateleira/armario");
